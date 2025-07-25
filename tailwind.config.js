@@ -7,8 +7,10 @@ export default {
         jetbrains: ['"JetBrains Mono"', "monospace"],
       },
       colors: {
-        "primary-white": "#fffff0",
-        "secondary-red": "#5c0000",
+        "primary-white": "#fffff0", // ivory
+        "secondary-white": "#FFF5EE", // seashell
+        "third-white": "#F9F6EE", // bone white
+        "fourth-white": "#E9DCC9", // linen
         "background-gray": "#c7afb0",
       },
     },

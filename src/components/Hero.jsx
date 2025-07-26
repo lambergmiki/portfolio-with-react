@@ -1,5 +1,6 @@
 
 const Hero = () => {
+
   return (
     <section id="hero" className="flex p-10">
         {/* Give headliner 1/3 of Hero container and 2/3 to 3d object */}
@@ -8,5 +9,7 @@ const Hero = () => {
     </section>
   )
 }
+
+
 
 export default Hero

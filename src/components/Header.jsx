@@ -60,19 +60,19 @@ const Header = () => {
           {/* -scale-y-100 mirrors element on its y-axis */}
           <a
             className="text-base text-primary-white tracking-wider transition-all duration-300 hover:-scale-y-125"
-            href="#"
+            href="#about"
           >
             about me
           </a>
           <a
             className="text-base text-primary-white tracking-wider transition-all duration-300 hover:-scale-y-125"
-            href="#"
+            href="#projects"
           >
             projects
           </a>
           <a
             className="text-base text-primary-white tracking-wider transition-all duration-300 hover:-scale-y-125"
-            href="#"
+            href="#contact"
           >
             contact
           </a>

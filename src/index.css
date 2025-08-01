@@ -6,6 +6,6 @@
 
 @layer base {
   body {
-    @apply relative font-jetbrains h-screen overflow-x-hidden;
+    @apply relative font-jetbrains overflow-x-hidden;
   }
 }

@@ -8,7 +8,6 @@ import Contact from "./components/Contact";
 export default function App() {
   return (
     <main>
-      <img className="absolute -z-60" src="images/gradient-background.png" />
       <Header />
       <Hero />
       <Timeline />

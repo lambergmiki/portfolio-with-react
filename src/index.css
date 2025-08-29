@@ -7,7 +7,7 @@
 @layer base {
   canvas {
     width: 100%;
-    height: 30vh; /* TODO: Limit height or disable based on device */
+    height: 50vh; /* TODO: Limit height or disable based on device */
     margin: 0;
     padding: 0;
   }

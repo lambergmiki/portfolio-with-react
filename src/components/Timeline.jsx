@@ -23,12 +23,14 @@ const Timeline = () => {
     // Items alternate entering from left/right based on index
     tlItem.forEach((item, i) => {
       tl.from(item, {
-        xPercent: i % 2 === 0 ? -200 : 200,
+        xPercent: i % 2 === 0 ? 200 : -200,
         opacity: 0,
+        duration: 1,
+        ease: "expo.out",
       });
     });
 
-
+    // TODO: disable scrolling and freeze timeline after it's been scrolled through once?
     ScrollTrigger.create({
       animation: tl,
       trigger: tlContainer.current,
@@ -48,10 +50,17 @@ const Timeline = () => {
       id="tlContainer"
       className="relative min-h-[1150px] overflow-hidden"
     >
+
+      {/* Vertical line down the middle */}
+      <div className="absolute left-1/2 top-0 h-full w-1 bg-slate-200"></div>
+
       {timelineItems.map((item, i) => (
         <div
           key={i}
-          className="timeline-item p-8"
+          className={`timeline-item relative w-1/2 p-6 ${i % 2 === 0
+            ? "pr-20 mr-auto text-right" // left-side card: pushed left, text aligned right...
+            : "pl-20 ml-auto text-left" // ... and reverse
+          }`}
         >
           <h2 className="text-2xl font-bold">{item.title}</h2>
           <p className="text-sm">{item.year}</p>

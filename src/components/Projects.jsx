@@ -63,54 +63,48 @@ const Projects = () => {
   return (
     <section id="projects" className="relative px-6 py-10 text-xl ml-20 mr-40">
       <h2 className="text-5xl mb-8 text-center">Projects</h2>
+      <h3 className="text-2xl mb-20 text-center">Click the title to access the project, click the card to see the next project.</h3>
 
       <div ref={projectsWrapper} className="relative h-[400px] w-full">
         {/* Cards are only clickable if index value is 0 (e.g. top card) */}
+
         <div
-          className="flex justify-between absolute project-cards bg-white p-4 w-full h-40"
-        >
-        <h3 className="title border p-2 m-2 w-[400px] rounded-lg"
+          className="flex justify-between absolute project-cards bg-white w-full h-40">
+        <h3 className="title border p-2 min-w-96 rounded-lg bg-slate-500 text-3xl text-center"
         onClick={(e) => {
           const parent = e.currentTarget.parentElement;
             if (cardsRef.current[0] === parent) shiftStack();
           }}
           >
-            Matgeneratorn.se
+            <a href="https://github.com/lambergmiki/matgeneratorn">Matgeneratorn.se</a>
             </h3>
-        <h3 className="description p-2 m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolorem est ratione vel ipsam quis velit porro et laudantium! Quia cumque vel facilis nam non laudantium sit ad facere modi.</h3>
+        <h3 className="description p-2 ml-20">My first large project with JavaScript. Possibly also my first "development request", as my wife wanted an application like this. Want to see the live app? You can find it at <a href="www.matgeneratorn.se">matgeneratorn.se</a></h3>
         </div>
 
         <div
-          className="flex justify-between absolute project-cards bg-white p-4 w-full h-40"
-          
-        >
-          <h3 className="title border p-2 m-2 w-[400px] rounded-lg"
+          className="flex justify-between absolute project-cards bg-white w-full h-40">
+          <h3 className="title border p-2 min-w-96 rounded-lg bg-slate-500 text-3xl text-center"
           onClick={(e) => {
           const parent = e.currentTarget.parentElement;
             if (cardsRef.current[0] === parent) shiftStack();
           }}
           >
-            My first IoT project
+            <a href="https://github.com/lambergmiki/IoT-Summer-2025">My first IoT project</a>
             </h3>
-          <h3 className="description p-2 m-2 opacity-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptates sit iste rerum accusamus pariatur placeat, enim ipsam repudiandae perferendis ad quis doloremque, optio exercitationem dolore porro blanditiis quaerat voluptate.</h3>
+          <h3 className="description p-2 opacity-0 ml-20">Solving one of the most non-important, important things: taking care of pizza dough. It was a great pleasure learning how hardware and software can work together.</h3>
         </div>
 
         <div
-          className="flex justify-between absolute project-cards bg-white p-4 w-full h-40"
-          onClick={(e) => {
-          const parent = e.currentTarget.parentElement;
-            if (cardsRef.current[0] === parent) shiftStack();
-          }}
-        >
-          <h3 className="title border p-2 m-2 w-[400px] rounded-lg"
+          className="flex justify-between absolute project-cards bg-white w-full h-40">
+        <h3 className="title border p-2 min-w-96 rounded-lg bg-slate-500 text-3xl text-center"
           onClick={(e) => {
           const parent = e.currentTarget.parentElement;
             if (cardsRef.current[0] === parent) shiftStack();
           }}
           >
-            Dotfiles
+            <a href="https://github.com/lambergmiki/dotfiles">Dotfiles</a>
             </h3>
-          <h3 className="description p-2 m-2 opacity-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, laborum nostrum dolorem, repudiandae nam cumque quaerat veniam quos aliquam nesciunt iure id corrupti. Nemo totam voluptatum quis laborum consectetur earum.</h3>
+          <h3 className="description p-2 opacity-0 ml-20">After manually installing x, y and z on new laptops and reinstalled desktops, I finally learned about backing up dotfiles and how a shell script can be useful.</h3>
         </div>
       </div>
     </section>

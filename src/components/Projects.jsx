@@ -58,12 +58,11 @@ const Projects = () => {
   }
   };
 
-  // TODO: Replace placeholders with actual projects and links to GitHub. Perhaps a drag-to-open-link animation?
-  // TODO: BUG - When clicking through cards rapidly they can become stuck and descriptions stay visible (opacity 1) despite not belonging to the top card
+  // TODO: Add a pleasant drag-to-open (project) animation, or something similar in contrast to current simple click-link.
   return (
     <section id="projects" className="relative px-6 py-10 text-xl ml-20 mr-40">
       <h2 className="text-5xl mb-8 text-center">Projects</h2>
-      <h3 className="text-2xl mb-20 text-center">Click the title to access the project, click the card to see the next project.</h3>
+      <h3 className="text-2xl mb-20 text-center">Click the title to access the project, or the card itself to see the next project.</h3>
 
       <div ref={projectsWrapper} className="relative h-[400px] w-full">
         {/* Cards are only clickable if index value is 0 (e.g. top card) */}
@@ -78,7 +77,7 @@ const Projects = () => {
           >
             <a href="https://github.com/lambergmiki/matgeneratorn">Matgeneratorn.se</a>
             </h3>
-        <h3 className="description p-2 ml-20">My first large project with JavaScript. Possibly also my first "development request", as my wife wanted an application like this. Want to see the live app? You can find it at <a href="www.matgeneratorn.se">matgeneratorn.se</a></h3>
+        <h3 className="description p-2 ml-20">My first large project with JavaScript. Possibly also my first "development request", as my wife requested this application. Want to see the live app? You can find it at <a href="www.matgeneratorn.se">matgeneratorn.se</a></h3>
         </div>
 
         <div
@@ -104,7 +103,7 @@ const Projects = () => {
           >
             <a href="https://github.com/lambergmiki/dotfiles">Dotfiles</a>
             </h3>
-          <h3 className="description p-2 opacity-0 ml-20">After manually installing x, y and z on new laptops and reinstalled desktops, I finally learned about backing up dotfiles and how a shell script can be useful.</h3>
+          <h3 className="description p-2 opacity-0 ml-20">After manually reinstalling software and setting up configuration files on new/formatted laptops and desktops, I finally learned about backing up dotfiles and how a shell scripts can simplify your life.</h3>
         </div>
       </div>
     </section>

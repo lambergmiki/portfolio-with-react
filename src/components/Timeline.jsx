@@ -6,10 +6,11 @@ import { useRef } from "react";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const timelineItems = [
-  { year: "2020", title: "Telia", description: "placeholder" },
-  { year: "2023", title: "Flyttar till Spanien", description: "placeholder" },
-  { year: "2024", title: "Webbprogrammerare @ Linnéuniversitetet", description: "placeholder" },
-  { year: "2025", title: "SI-ledare & TA @ Linnéuniversitet", description: "placeholder" },
+  { year: "2020 okt - 2023 sep", title: "Telia", description: "3 år på Telia - 1,5 år i rollen som IT-support mot B2B-kunder och 1,5 år som produktspecialist med produktportföljen 'Mobil som tjänst'." },
+  { year: "2023 sep", title: "Flyttar till Spanien", description: "Tillsammans med fru och dotter bär det av till Spanien - här njuter vi av föräldraledigheten med ambitionen att stanna kvar även efter föräldraledigheten." },
+  { year: "2024 aug", title: "Webbprogrammerare på Linnéuniversitetet", description: "Efter ett år av föräldraledighet och många år av sälj & marknadsföring påbörjar jag äntligen resan för att bli en utvecklare." },
+  { year: "2025 aug", title: "SI-ledare på Linnéuniversitet", description: "Jag får förtroendet att vara SI-ledare och därmed möjligheten att stötta nya studenter i deras inledande kurser." },
+  { year: "2026", title: "Sverige?", description: "Vår ambition är att flytta hem igen. Kanske redan 2026, beroende på vad arbetsmöjligheter!"}
 ];
 
 const Timeline = () => {
@@ -35,7 +36,7 @@ const Timeline = () => {
       animation: tl,
       trigger: tlContainer.current,
       start: "top top",
-      end: "+=2500",
+      end: "+=3150",
       scrub: 1,
       pin: true,
       anticipatePin: 1,
@@ -62,9 +63,12 @@ const Timeline = () => {
             : "pl-20 ml-auto text-left" // ... and reverse
           }`}
         >
-          <h2 className="text-2xl font-bold">{item.title}</h2>
-          <p className="text-sm">{item.year}</p>
-          <p className="text-md">{item.description}</p>
+          <h2 className="text-2xl mb-2 font-bold">{item.title}</h2>
+          <p className="text-md mb-2">{item.year}</p>
+          <p 
+          className={`text-xl max-w-[400px] text-balance ${i % 2 === 0 ? "ml-auto" : "mr-auto"}`}>
+          {item.description}
+          </p>
         </div>
       ))}
     </div>

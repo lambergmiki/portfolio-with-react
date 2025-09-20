@@ -32,7 +32,7 @@ const Projects = () => {
 
     cardsRef.current.forEach((card, i) => {
       gsap.to(card, {
-        yPercent: i * 45,
+        yPercent: i * 25,
         // xPercent: i * 15,
         zIndex: cardsRef.current.length - i,
         duration: 0.5,
@@ -105,6 +105,21 @@ const Projects = () => {
             </h3>
           <h3 className="description p-2 opacity-0 ml-20">After manually reinstalling software and setting up configuration files on new/formatted laptops and desktops, I finally learned about backing up dotfiles and how a shell scripts can simplify your life.</h3>
         </div>
+
+        <div
+          className="flex justify-between absolute project-cards bg-white w-full h-40">
+        <h3 className="title border p-2 min-w-96 rounded-lg bg-slate-500 text-3xl text-center"
+          onClick={(e) => {
+          const parent = e.currentTarget.parentElement;
+            if (cardsRef.current[0] === parent) shiftStack();
+          }}
+          >
+            <a href="https://github.com/lambergmiki/Alien-Invasion">Alien Invasion - The Game</a>
+            </h3>
+          <h3 className="description p-2 opacity-0 ml-20 text-balance">My very first hands-on experience programming happened to be in Python. I highly recommend
+            <a href="https://nostarch.com/python-crash-course-3rd-edition"><p className="underline decoration-double text-balance">Python Crash Course by Eric Matthes</p></a> to those curious about programming with little to no experience beforehand. The project is untouched since then, just so I can see where it all started. <em>The repo doesn't even have a README, hehe.</em></h3>
+        </div>
+
       </div>
     </section>
   );

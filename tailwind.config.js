@@ -13,12 +13,7 @@ export default {
         "fourth-white": "#E9DCC9", // linen
         "background-gray": "#c7afb0",
       },
-      // Custom breakpoints for minimum widths
-      screens: {
-        'xs': '475px', // applies from 475px and up (e.g. bigger viewports than mobile screens)
-        'sm': '750px' // applies from 750px and up (e.g. bigger viewports than tablet screens)
-      },
     },
   },
   plugins: [],
-};
+}

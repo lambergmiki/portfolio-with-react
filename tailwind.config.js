@@ -15,10 +15,10 @@ export default {
       },
       // Custom breakpoints for minimum widths
       screens: {
-        'xs': '475px', // applies from 475px and up (e.g. bigger viewports than mobile screens)
-        'sm': '750px' // applies from 750px and up (e.g. bigger viewports than tablet screens)
+        xs: "475px", // applies from 475px and up (e.g. bigger viewports than mobile screens)
+        sm: "750px", // applies from 750px and up (e.g. bigger viewports than tablet screens)
       },
     },
   },
   plugins: [],
-};
+}

@@ -7,24 +7,24 @@ Source: https://sketchfab.com/3d-models/cute-food-truck-bf66906506eb48a2a7f88ab9
 Title: Cute Food truck
 */
 
-import React from 'react'
-import { Center, useGLTF } from '@react-three/drei'
+import React from "react"
+import { Center, useGLTF } from "@react-three/drei"
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/food_truck.gltf')
+  const { nodes, materials } = useGLTF("/food_truck.gltf")
   return (
     <Center>
       <group {...props} dispose={null}>
         <mesh
           geometry={nodes.Cube008_Material001_0.geometry}
-          material={materials['Material.001']}
-          position={[0, 0, 0]}           // reset position to center it
+          material={materials["Material.001"]}
+          position={[0, 0, 0]} // reset position to center it
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={0.4}                   // scale down to 50%
+          scale={0.4} // scale down to 50%
         />
       </group>
     </Center>
   )
 }
 
-useGLTF.preload('/food_truck.gltf')
+useGLTF.preload("/food_truck.gltf")

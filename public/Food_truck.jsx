@@ -7,11 +7,11 @@ Source: https://sketchfab.com/3d-models/cute-food-truck-bf66906506eb48a2a7f88ab9
 Title: Cute Food truck
 */
 
-import React from "react"
-import { Center, useGLTF } from "@react-three/drei"
+import React from "react";
+import { Center, useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF("/food_truck.gltf")
+  const { nodes, materials } = useGLTF("/food_truck.gltf");
   return (
     <Center>
       <group {...props} dispose={null}>
@@ -24,7 +24,7 @@ export default function Model(props) {
         />
       </group>
     </Center>
-  )
+  );
 }
 
-useGLTF.preload("/food_truck.gltf")
+useGLTF.preload("/food_truck.gltf");

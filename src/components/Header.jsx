@@ -44,9 +44,7 @@ const Header = () => {
                 onClick={() => setMenuOpen((previousState) => !previousState)}
                 className="md:hidden text-4xl mt-2 z-50"
             >
-                <i
-                    className={`bx ${menuOpen ? "bx-x" : "bx-menu"} transition duration-150 ease-in-out`}
-                ></i>
+                <i className={`bx ${menuOpen ? "bx-x" : "bx-menu"}`}></i>
             </button>
 
             {/* Mobile menu (renders only when menuOpen is true)

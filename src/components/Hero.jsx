@@ -10,7 +10,7 @@ const Hero = () => {
 
             <div className="">
                 <img
-                    className="size-36 rounded-full lg:size-96 lg:mt-40"
+                    className="size-36 rounded-full lg:size-96 lg:mt-28"
                     src="../../public/images/profilbild.jpg"
                     alt="Profile picture"
                 ></img>

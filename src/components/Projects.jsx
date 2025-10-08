@@ -59,12 +59,12 @@ const Projects = () => {
     };
 
     return (
-        <section className="px-6 py-10 text-xl">
-            <h2 className="text-5xl mb-8 text-center">Projects</h2>
+        <section id="projects" className="px-6 py-10 text-xl">
+            <h2 className="text-5xl mb-8 text-center">Projekt</h2>
             <p className="mb-10 text-2xl xl:mb-20 text-center">
-                Click the title to access the project
+                Klicka på titeln för att kika på projektet
                 <span className="hidden md:inline">
-                    , or the card itself to see the next project.
+                    , eller på själva kortet för att bläddra till nästa projekt.
                 </span>
             </p>
 
@@ -77,7 +77,7 @@ const Projects = () => {
 
                 <div className="flex justify-between absolute project-cards bg-white h-40">
                     <h3
-                        className="title border p-2 min-w-96 rounded-lg bg-slate-500 text-3xl text-center"
+                        className="title skew-x-12 border-8 p-2 min-w-96 border-double bg-stone-900 text-3xl text-center"
                         onClick={(e) => {
                             const parent = e.currentTarget.parentElement;
                             if (cardsRef.current[0] === parent) shiftStack();
@@ -90,12 +90,16 @@ const Projects = () => {
                             Matgeneratorn.se
                         </a>
                     </h3>
-                    <h3 className="description p-2 ml-20">
-                        My first large project with JavaScript. Possibly also my
-                        first "development request", as my wife requested this
-                        application. Want to see the live app? You can find it
-                        at{" "}
-                        <a href="www.matgeneratorn.se" target="_blank">
+                    <h3 className="description p-2 ml-60 text-balance">
+                        Mitt första större projekt med JavaScript. Möjligen
+                        också mitt första "utvecklingsuppdrag", eftersom min fru
+                        bad mig skapa den här applikationen. Vill du se den
+                        live? Du hittar den på{" "}
+                        <a
+                            className="underline decoration-double text-balance"
+                            href="www.matgeneratorn.se"
+                            target="_blank"
+                        >
                             matgeneratorn.se
                         </a>
                     </h3>
@@ -103,7 +107,7 @@ const Projects = () => {
 
                 <div className="flex justify-between absolute project-cards bg-white h-40">
                     <h3
-                        className="title border p-2 min-w-96 rounded-lg bg-slate-500 text-3xl text-center"
+                        className="title skew-x-12 border-8 p-2 min-w-96 border-double bg-stone-900 text-3xl text-center"
                         onClick={(e) => {
                             const parent = e.currentTarget.parentElement;
                             if (cardsRef.current[0] === parent) shiftStack();
@@ -116,16 +120,16 @@ const Projects = () => {
                             My first IoT project
                         </a>
                     </h3>
-                    <h3 className="description p-2 opacity-0 ml-20">
-                        Solving one of the most non-important, important things:
-                        taking care of pizza dough. It was a great pleasure
-                        learning how hardware and software can work together.
+                    <h3 className="description p-2 opacity-0 ml-60 text-balance">
+                        Hur man tar hand om pizzadeg när klimatet inte går att
+                        lita på. Jättekul att för första gången se hur hårdvara
+                        och mjukvara kan interagera.
                     </h3>
                 </div>
 
                 <div className="flex justify-between absolute project-cards bg-white h-40">
                     <h3
-                        className="title border p-2 min-w-96 rounded-lg bg-slate-500 text-3xl text-center"
+                        className="title skew-x-12 border-8 p-2 min-w-96 border-double bg-stone-900 text-3xl text-center"
                         onClick={(e) => {
                             const parent = e.currentTarget.parentElement;
                             if (cardsRef.current[0] === parent) shiftStack();
@@ -138,18 +142,18 @@ const Projects = () => {
                             Dotfiles
                         </a>
                     </h3>
-                    <h3 className="description p-2 opacity-0 ml-20">
-                        {" "}
-                        After manually reinstalling software and setting up
-                        configuration files on new/formatted laptops and
-                        desktops, I finally learned about backing up dotfiles
-                        and how a shell scripts can simplify your life.
+                    <h3 className="description p-2 opacity-0 ml-60 text-balance">
+                        Efter att ha ominstallerat mjukvara och diverse
+                        konfigurationer i otaliga miljöer hittade jag via en
+                        bekant "dotfiles". Konfigurationsfiler säkerhetskopieras
+                        och ett shellscript förenklar livet vid nya
+                        installationer.
                     </h3>
                 </div>
 
                 <div className="flex justify-between absolute project-cards bg-white h-40">
                     <h3
-                        className="title border p-2 min-w-96 rounded-lg bg-slate-500 text-3xl text-center"
+                        className="title skew-x-12 border-8 p-2 min-w-96 border-double bg-stone-900 text-3xl text-center"
                         onClick={(e) => {
                             const parent = e.currentTarget.parentElement;
                             if (cardsRef.current[0] === parent) shiftStack();
@@ -162,27 +166,27 @@ const Projects = () => {
                             Alien Invasion
                         </a>
                     </h3>
-                    <h3 className="description p-2 opacity-0 ml-20 text-balance">
-                        My very first hands-on experience programming happened
-                        to be in Python. I highly recommend
+                    <h3 className="description p-2 opacity-0 ml-60 text-balance">
+                        Min inkörsport till programmering blev Alien Invasion i
+                        Python. Jag rekommenderar varmt{" "}
                         <a
                             href="https://nostarch.com/python-crash-course-3rd-edition"
                             target="_blank"
                         >
-                            <p className="underline decoration-double text-balance">
+                            <span className="inline underline decoration-double text-balance">
                                 Python Crash Course by Eric Matthes
-                            </p>
-                        </a>
-                        to those curious about programming with little to no
-                        experience beforehand. The project is untouched since
-                        then, just so I can see where it all started.
-                        <em> The repo doesn't even have a README, hehe.</em>
+                            </span>
+                        </a>{" "}
+                        till alla (med lite eller begränsad erfarenhet) som är
+                        nyfikna på programmering. Jag har inte rört repot sedan
+                        dess.
+                        <em> Det har inte ens en README, hehe.</em>
                     </h3>
                 </div>
 
                 <div className="flex justify-between absolute project-cards bg-white h-40">
                     <h3
-                        className="title border p-2 min-w-96 rounded-lg bg-slate-500 text-3xl text-center"
+                        className="title skew-x-12 border-8 p-2 min-w-96 border-double bg-stone-900 text-3xl text-center"
                         onClick={(e) => {
                             const parent = e.currentTarget.parentElement;
                             if (cardsRef.current[0] === parent) shiftStack();
@@ -195,19 +199,20 @@ const Projects = () => {
                             rss2html
                         </a>
                     </h3>
-                    <h3 className="description p-2 opacity-0 ml-20">
-                        I was interested in RSS feeds and how to avoid all noise
-                        around news sites, so I took the opportunity in a
-                        "build-a-module"-course to create the beginning of an
-                        automatic RSS-feed generator.
+                    <h3 className="description p-2 opacity-0 ml-60 text-balance">
+                        Jag var intresserad av att ta del av nyheter utan bruset
+                        runtomkring (annonser, exponering mot annat material
+                        etc.) och tog tillfället i akt under en
+                        "bygg-en-modul"-kurs för att skapa början av en
+                        automatisk RSS-feed-generator-<em>ish</em>.
                     </h3>
                 </div>
             </div>
 
             {/* Mobile */}
             <div className="mobile-container relative flex flex-col  md:hidden">
-                <div className="bg-white min-h-40 relative border mb-6">
-                    <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center">
+                <div className="bg-white min-h-40 relative border-2 mb-6">
+                    <h3 className="title p-2 min-w-max  border-b-2 text-2xl text-center">
                         <a
                             href="https://github.com/lambergmiki/matgeneratorn"
                             target="_blank"
@@ -216,10 +221,10 @@ const Projects = () => {
                         </a>
                     </h3>
                     <h3 className="description p-2">
-                        My first large project with JavaScript. Possibly also my
-                        first "development request", as my wife requested this
-                        application. Want to see the live app? You can find it
-                        at{" "}
+                        Mitt första större projekt med JavaScript. Möjligen
+                        också mitt första "utvecklingsuppdrag", eftersom min fru
+                        bad mig skapa den här applikationen. Vill du se den
+                        live? Du hittar den på{" "}
                         <a href="www.matgeneratorn.se" target="_blank">
                             matgeneratorn.se
                         </a>
@@ -237,10 +242,9 @@ const Projects = () => {
                             </a>
                         </h3>
                         <h3 className="description p-2">
-                            Solving one of the most non-important, important
-                            things: taking care of pizza dough. It was a great
-                            pleasure learning how hardware and software can work
-                            together.
+                            Hur man tar hand om pizzadeg när klimatet inte går
+                            att lita på. Jättekul att för första gången se hur
+                            hårdvara och mjukvara kan interagera.
                         </h3>
                     </div>
                 </div>
@@ -256,10 +260,11 @@ const Projects = () => {
                     </h3>
                     <h3 className="description p-2">
                         {" "}
-                        After manually reinstalling software and setting up
-                        configuration files on new/formatted laptops and
-                        desktops, I finally learned about backing up dotfiles
-                        and how a shell scripts can simplify your life.
+                        Efter att ha ominstallerat mjukvara och diverse
+                        konfigurationer i otaliga miljöer hittade jag via en
+                        bekant "dotfiles". Konfigurationsfiler säkerhetskopieras
+                        och ett shellscript förenklar livet vid nya
+                        installationer.
                     </h3>
                 </div>
 
@@ -273,8 +278,8 @@ const Projects = () => {
                         </a>
                     </h3>
                     <h3 className="description p-2">
-                        My very first hands-on experience programming happened
-                        to be in Python. I highly recommend
+                        Min inkörsport till programmering blev Alien Invasion i
+                        Python. Jag rekommenderar varmt
                         <a
                             href="https://nostarch.com/python-crash-course-3rd-edition"
                             target="_blank"
@@ -283,10 +288,10 @@ const Projects = () => {
                                 Python Crash Course by Eric Matthes
                             </p>
                         </a>
-                        to those curious about programming with little to no
-                        experience beforehand. The project is untouched since
-                        then, just so I can see where it all started.
-                        <em> The repo doesn't even have a README, hehe.</em>
+                        till alla (med lite eller begränsad erfarenhet) som är
+                        nyfikna på programmering. Jag har inte rört repot sedan
+                        dess.
+                        <em> Det har inte ens en README, hehe.</em>
                     </h3>
                 </div>
 
@@ -300,10 +305,11 @@ const Projects = () => {
                         </a>
                     </h3>
                     <h3 className="description p-2">
-                        I was interested in RSS feeds and how to avoid all noise
-                        around news sites, so I took the opportunity in a
-                        "build-a-module"-course to create the beginning of an
-                        automatic RSS-feed generator.
+                        Jag var intresserad av att ta del av nyheter utan bruset
+                        runtomkring (annonser, exponering mot annat material
+                        etc.) och tog tillfället i akt under en
+                        "bygg-en-modul"-kurs för att skapa början av en
+                        automatisk RSS-feed-generator-<em>ish</em>.
                     </h3>
                 </div>
             </div>

@@ -20,19 +20,19 @@ const Header = () => {
                     className="text-3xl p-2 tracking-wider transition-all duration-300 hover:-scale-y-125"
                     href="#about"
                 >
-                    about me
+                    om mig
                 </a>
                 <a
                     className="text-3xl p-2 tracking-wider transition-all duration-300 hover:-scale-y-125"
                     href="#projects"
                 >
-                    projects
+                    projekt
                 </a>
                 <a
                     className="text-3xl p-2 tracking-wider transition-all duration-300 hover:-scale-y-125"
                     href="#contact"
                 >
-                    contact
+                    kontakta mig
                 </a>
             </nav>
 
@@ -50,7 +50,7 @@ const Header = () => {
             {/* Mobile menu (renders only when menuOpen is true)
     Positioned 64px from the top (top-16), and anchored to all other edges except right. */}
             {menuOpen && (
-                <div className="fixed top-16 bottom-0 right-10 left-0 p-5 z-40">
+                <div className="absolute top-0 left-0 right-0 p-5 z-40">
                     <nav className="flex flex-col gap-6 items-center">
                         {/* items-center centers items horizontally inside the parent container */}
                         <a
@@ -58,21 +58,21 @@ const Header = () => {
                             className="text-xl tracking-wider"
                             href="#about"
                         >
-                            about me
+                            om mig
                         </a>
                         <a
                             onClick={() => setMenuOpen(false)}
                             className="text-xl tracking-wider"
                             href="#projects"
                         >
-                            projects
+                            projekt
                         </a>
                         <a
                             onClick={() => setMenuOpen(false)}
                             className="text-xl tracking-wider"
                             href="#contact"
                         >
-                            contact
+                            kontakta mig
                         </a>
                     </nav>
                 </div>

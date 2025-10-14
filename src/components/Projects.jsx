@@ -77,7 +77,7 @@ const Projects = () => {
 
                 <div className="flex justify-between absolute project-cards bg-white h-40">
                     <h3
-                        className="title skew-x-12 border-8 p-2 min-w-96 border-double bg-stone-900 text-3xl text-center"
+                        className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
                         onClick={(e) => {
                             const parent = e.currentTarget.parentElement;
                             if (cardsRef.current[0] === parent) shiftStack();
@@ -97,7 +97,7 @@ const Projects = () => {
                         live? Du hittar den på{" "}
                         <a
                             className="underline decoration-double text-balance"
-                            href="www.matgeneratorn.se"
+                            href="https://www.matgeneratorn.se"
                             target="_blank"
                         >
                             matgeneratorn.se
@@ -107,7 +107,7 @@ const Projects = () => {
 
                 <div className="flex justify-between absolute project-cards bg-white h-40">
                     <h3
-                        className="title skew-x-12 border-8 p-2 min-w-96 border-double bg-stone-900 text-3xl text-center"
+                        className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
                         onClick={(e) => {
                             const parent = e.currentTarget.parentElement;
                             if (cardsRef.current[0] === parent) shiftStack();
@@ -129,7 +129,7 @@ const Projects = () => {
 
                 <div className="flex justify-between absolute project-cards bg-white h-40">
                     <h3
-                        className="title skew-x-12 border-8 p-2 min-w-96 border-double bg-stone-900 text-3xl text-center"
+                        className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
                         onClick={(e) => {
                             const parent = e.currentTarget.parentElement;
                             if (cardsRef.current[0] === parent) shiftStack();
@@ -153,7 +153,7 @@ const Projects = () => {
 
                 <div className="flex justify-between absolute project-cards bg-white h-40">
                     <h3
-                        className="title skew-x-12 border-8 p-2 min-w-96 border-double bg-stone-900 text-3xl text-center"
+                        className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
                         onClick={(e) => {
                             const parent = e.currentTarget.parentElement;
                             if (cardsRef.current[0] === parent) shiftStack();
@@ -186,7 +186,7 @@ const Projects = () => {
 
                 <div className="flex justify-between absolute project-cards bg-white h-40">
                     <h3
-                        className="title skew-x-12 border-8 p-2 min-w-96 border-double bg-stone-900 text-3xl text-center"
+                        className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
                         onClick={(e) => {
                             const parent = e.currentTarget.parentElement;
                             if (cardsRef.current[0] === parent) shiftStack();
@@ -212,7 +212,7 @@ const Projects = () => {
             {/* Mobile */}
             <div className="mobile-container relative flex flex-col  md:hidden">
                 <div className="bg-white min-h-40 relative border-2 mb-6">
-                    <h3 className="title p-2 min-w-max  border-b-2 text-2xl text-center">
+                    <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
                         <a
                             href="https://github.com/lambergmiki/matgeneratorn"
                             target="_blank"
@@ -225,15 +225,20 @@ const Projects = () => {
                         också mitt första "utvecklingsuppdrag", eftersom min fru
                         bad mig skapa den här applikationen. Vill du se den
                         live? Du hittar den på{" "}
-                        <a href="www.matgeneratorn.se" target="_blank">
+                        <a
+                            className="underline decoration-double"
+                            href="https://www.matgeneratorn.se"
+                            target="_blank"
+                        >
                             matgeneratorn.se
                         </a>
+                        .
                     </h3>
                 </div>
 
                 <div className="bg-white min-h-40 relative">
                     <div className="bg-white min-h-40 relative border mb-6">
-                        <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center">
+                        <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
                             <a
                                 href="https://github.com/lambergmiki/IoT-Summer-2025"
                                 target="_blank"
@@ -250,7 +255,7 @@ const Projects = () => {
                 </div>
 
                 <div className="bg-white min-h-40 relative border mb-6">
-                    <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center">
+                    <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
                         <a
                             href="https://github.com/lambergmiki/dotfiles"
                             target="_blank"
@@ -269,7 +274,7 @@ const Projects = () => {
                 </div>
 
                 <div className="bg-white min-h-40 relative border mb-6">
-                    <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center">
+                    <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
                         <a
                             href="https://github.com/lambergmiki/Alien-Invasion"
                             target="_blank"
@@ -296,7 +301,7 @@ const Projects = () => {
                 </div>
 
                 <div className="bg-white min-h-40 relative border mb-6">
-                    <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center">
+                    <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
                         <a
                             href="https://www.npmjs.com/package/rss2html"
                             target="_blank"

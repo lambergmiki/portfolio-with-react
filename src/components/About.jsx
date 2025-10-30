@@ -4,10 +4,9 @@ const About = () => {
       <p className="text-5xl text-center mb-10">Om mig</p>
       <p className="text-2xl text-center mb-20">
         Miki heter jag och går andra året Webbprogrammerare på Linnéuniversitetet.<br></br>
-        Jag gillar att lösa problem tillsammans med andra tycker om att lära mig ny teknik som är
-        nyttig.
-        <br></br>Förutom kod tycker jag väldigt mycket om mat och matlagning tillsammans med, helst
-        italiensk, fotboll, och att spendera tid med min familj.
+        Jag gillar att lösa problem tillsammans med andra och att lära mig ny teknik som är nyttig.
+        <br></br>Förutom kod tycker jag väldigt mycket om mat och matlagning tillsammans med (helst
+        italiensk) fotboll, och att spendera tid med min familj.
       </p>
       <div className="tech-stack-container flex flex-col">
         <p className="text-5xl text-center tracking-wider font-extrabold mb-20">Tech Stack</p>
@@ -28,13 +27,12 @@ const About = () => {
       </div>
       <div>
         <p className="flex justify-center text-2xl md:text-4xl font-extrabold mt-10 mb-10">
-          Vill utvecklas i...
+          Lär mig just nu...
         </p>
         <div className="icon-container flex flex-row justify-center mb-10 gap-4">
           <img src={"/icons/icons8-react-48.png"} alt="React logo" className="" />
-          <img src={"/icons/icons8-typescript-48.png"} alt="Java logo" className="" />
-          <img src={"/icons/icons8-postgresql-48.png"} alt="Java logo" className="" />
-          <img src={"/icons/icons8-java-48.png"} alt="Java logo" className="" />
+          <img src={"/icons/icons8-typescript-48.png"} alt="TypeScript logo" className="" />
+          <img src={"/icons/icons8-postgresql-48.png"} alt="PostgreSQL logo" className="" />
         </div>
       </div>
     </section>

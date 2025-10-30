@@ -5,8 +5,8 @@ const Contact = () => {
         <h2 className="text-5xl text-center mb-10">Jag söker jobb! </h2>
         <p className="text-center text-balance mb-10 lg:text-2xl">
           Inför stundande flytt tillbaka till Sverige söker jag mitt första jobb som utvecklare.
-          Tycker du att min profil verkar intressant? Tveka på inte på att höra av dig. Du hittar
-          mig på...
+          Tycker du att min profil verkar intressant? Tveka inte på att höra av dig. Du hittar mig
+          på...
         </p>
 
         <div className="flex justify-center transition-transform duration-150 hover:rotate-12 ">

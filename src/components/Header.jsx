@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header className="flex justify-between items-center py-4 px-4 lg:px-20">
-      <h2 className="text-4xl text-primary-white lg:text-8xl">Miki Lamberg</h2>
+      <h2 className="text-4xl text-secondary-white lg:text-8xl">Miki Lamberg</h2>
 
       {/* Desktop menu */}
 
@@ -15,19 +15,19 @@ const Header = () => {
         {/* -scale-y-100 mirrors element on its y-axis */}
 
         <a
-          className="text-3xl p-2 tracking-wider transition-all duration-300 hover:-scale-y-125"
+          className="text-3xl p-2 text-secondary-white tracking-wider transition-all duration-300 hover:-scale-y-125"
           href="#about"
         >
           om mig
         </a>
         <a
-          className="text-3xl p-2 tracking-wider transition-all duration-300 hover:-scale-y-125"
+          className="text-3xl p-2 text-secondary-white tracking-wider transition-all duration-300 hover:-scale-y-125"
           href="#projects"
         >
           projekt
         </a>
         <a
-          className="text-3xl p-2 tracking-wider transition-all duration-300 hover:-scale-y-125"
+          className="text-3xl p-2 text-secondary-white tracking-wider transition-all duration-300 hover:-scale-y-125"
           href="#contact"
         >
           kontakta mig

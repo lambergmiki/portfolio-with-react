@@ -8,9 +8,7 @@ export default {
       },
       colors: {
         "primary-white": "#fffff0", // ivory
-        "secondary-white": "#FFF5EE", // seashell
-        "third-white": "#F9F6EE", // bone white
-        "fourth-white": "#E9DCC9", // linen
+        "secondary-white": "#E9DCC9", // linen
         "background-gray": "#c7afb0",
       },
     },

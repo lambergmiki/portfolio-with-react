@@ -57,7 +57,7 @@ const Timeline = () => {
       {/* Render a parent div for each timeline event, containing title, year, description */}
       {timelineData.map((item, i) => (
         <div key={i} className="timeline-item relative text-center max-w-xl p-6">
-          <h2 className="text-3xl mb-2">{item.title}</h2>
+          <h2 className="text-3xl mb-2 text-secondary-white">{item.title}</h2>
           <p className="text-xl mb-2">{item.year}</p>
           <p className={`text-xl text-balance`}>{item.description}</p>
         </div>

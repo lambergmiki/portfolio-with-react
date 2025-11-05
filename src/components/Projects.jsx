@@ -60,7 +60,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="px-6 py-10 text-xl">
-      <h2 className="text-5xl mb-8 text-center">Projekt</h2>
+      <h2 className="text-5xl mb-8 text-center text-secondary-white">Projekt</h2>
       <p className="mb-10 text-2xl xl:mb-20 text-center">
         Klicka på titeln för att kika på projektet
         <span className="hidden md:inline">
@@ -124,7 +124,7 @@ const Projects = () => {
               if (cardsRef.current[0] === parent) shiftStack()
             }}
           >
-            <a href="https://github.com/lambergmiki/dotfiles" target="_blank">
+            <a href="https://github.com/lambergmiki/dotfiles_old" target="_blank">
               Dotfiles
             </a>
           </h3>
@@ -220,7 +220,7 @@ const Projects = () => {
 
         <div className="bg-white min-h-40 relative border mb-6">
           <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
-            <a href="https://github.com/lambergmiki/dotfiles" target="_blank">
+            <a href="https://github.com/lambergmiki/dotfiles_old" target="_blank">
               Dotfiles
             </a>
           </h3>

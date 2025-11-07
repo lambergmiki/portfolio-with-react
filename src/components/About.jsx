@@ -2,11 +2,21 @@ const About = () => {
   return (
     <section id="about" className="p-10 pl-6 text-xl">
       <p className="text-5xl text-center text-secondary-white mb-10">Om mig</p>
-      <p className="text-2xl text-center mb-20">
-        Miki heter jag och går andra året Webbprogrammerare på Linnéuniversitetet.<br></br>
-        Jag gillar att lösa problem tillsammans med andra och att lära mig ny teknik som är nyttig.
-        <br></br>Förutom kod tycker jag väldigt mycket om mat och matlagning tillsammans med (helst
-        italiensk) fotboll, och att spendera tid med min familj.
+      <p className="text-2xl/9 text-center text-balance mb-20">
+        Miki heter jag, 32 år gammal, och går andra året Webbprogrammerare på Linnéuniversitetet.
+        <p>
+          {" "}
+          <br></br>
+          Jag gillar att lösa problem tillsammans med andra, engagera mig i ny teknik och fördjupa
+          mig i... allt ifrån tangentbord till bakmaskiner!
+        </p>
+        <p>
+          {" "}
+          <br></br>
+          Förutom kod & teknik tycker jag väldigt mycket om mat och matlagning, fotboll (gärna
+          italiensk) och att spendera tid med min familj. Förr spenderade jag många timmar på tv-
+          och datorspel, idag blir det mer operativsystem, hårdvara och mjukvara istället.
+        </p>
       </p>
       <p className="text-5xl text-center tracking-wider font-extrabold text-secondary-white mb-10">
         Tech Stack
@@ -49,7 +59,7 @@ const About = () => {
         </div>
       </div>
       <div id="learning-tech">
-        <p className="text-center text-2xl md:text-4xl font-extrabold mt-20 mb-10">
+        <p className="text-center text-2xl md:text-4xl font-extrabold text-secondary-white mt-20 mb-10">
           Lär mig just nu...
         </p>
 

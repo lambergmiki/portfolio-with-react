@@ -10,10 +10,12 @@ const Hero = () => {
         <div className="flex flex-row">
           <p className="text-xl animate-pulse mt-10 lg:text-4xl">
             Full stack web developer loading...
-            <span className="text-sm"> Looking for my GitHub? Right here -&gt; </span>
           </p>
+          <span className="text-xs ml-4 mt-12 lg:text-lg">
+            Psst, looking for my GitHub? Right here -&gt;
+          </span>
 
-          <div className="mt-8 ml-2 transition-transform duration-150 hover:-rotate-12">
+          <div className="mt-20 ml-2 scale-150 lg:scale-100 lg:mt-8 transition-transform duration-150 hover:-rotate-12">
             <a href="https://www.github.com/lambergmiki/" target="_blank">
               <img src={"/icons/github50.png"} alt="GitHub logo" />
             </a>

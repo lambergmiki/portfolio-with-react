@@ -62,15 +62,37 @@ const Projects = () => {
     <section id="projects" className="px-6 py-10 text-xl">
       <h2 className="text-5xl mb-8 text-center text-secondary-white">Projekt</h2>
       <p className="mb-10 text-2xl xl:mb-20 text-center">
-        Klicka på titeln för att kika på projektet
+        Klicka på titeln för att kika på projektet. Från äldst till senaste.
         <span className="hidden md:inline">
-          , eller på själva kortet för att bläddra till nästa projekt.
+          , eller på själva kortet för att bläddra till nästa projekt. Från äldst till senaste.
         </span>
       </p>
 
-      {/* Desktop */}
       <div ref={projectsWrapper} className="hidden md:block relative h-[400px] w-full">
-        {/* Cards are only clickable if index value is 0 (e.g. top card) */}
+        <div className="flex justify-between absolute project-cards bg-white h-40">
+          <h3
+            className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
+            onClick={(e) => {
+              const parent = e.currentTarget.parentElement
+              if (cardsRef.current[0] === parent) shiftStack()
+            }}
+          >
+            <a href="https://github.com/lambergmiki/Alien-Invasion" target="_blank">
+              Alien Invasion
+            </a>
+          </h3>
+          <h3 className="description p-2 ml-60 text-balance">
+            Min inkörsport till programmering blev Alien Invasion i Python. Jag rekommenderar varmt{" "}
+            <a href="https://nostarch.com/python-crash-course-3rd-edition" target="_blank">
+              <span className="inline underline decoration-double text-balance">
+                Python Crash Course by Eric Matthes
+              </span>
+            </a>{" "}
+            till alla (med lite eller begränsad erfarenhet) som är nyfikna på programmering. Jag har
+            inte rört repot sedan dess.
+            <em> Det har inte ens en README, hehe.</em>
+          </h3>
+        </div>
 
         <div className="flex justify-between absolute project-cards bg-white h-40">
           <h3
@@ -124,50 +146,6 @@ const Projects = () => {
               if (cardsRef.current[0] === parent) shiftStack()
             }}
           >
-            <a href="https://github.com/lambergmiki/dotfiles_old" target="_blank">
-              Dotfiles
-            </a>
-          </h3>
-          <h3 className="description p-2 opacity-0 ml-60 text-balance">
-            Efter att ha ominstallerat mjukvara och diverse konfigurationer i otaliga miljöer
-            hittade jag via en bekant "dotfiles". Konfigurationsfiler säkerhetskopieras och ett
-            shellscript förenklar livet vid nya installationer.
-          </h3>
-        </div>
-
-        <div className="flex justify-between absolute project-cards bg-white h-40">
-          <h3
-            className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
-            onClick={(e) => {
-              const parent = e.currentTarget.parentElement
-              if (cardsRef.current[0] === parent) shiftStack()
-            }}
-          >
-            <a href="https://github.com/lambergmiki/Alien-Invasion" target="_blank">
-              Alien Invasion
-            </a>
-          </h3>
-          <h3 className="description p-2 opacity-0 ml-60 text-balance">
-            Min inkörsport till programmering blev Alien Invasion i Python. Jag rekommenderar varmt{" "}
-            <a href="https://nostarch.com/python-crash-course-3rd-edition" target="_blank">
-              <span className="inline underline decoration-double text-balance">
-                Python Crash Course by Eric Matthes
-              </span>
-            </a>{" "}
-            till alla (med lite eller begränsad erfarenhet) som är nyfikna på programmering. Jag har
-            inte rört repot sedan dess.
-            <em> Det har inte ens en README, hehe.</em>
-          </h3>
-        </div>
-
-        <div className="flex justify-between absolute project-cards bg-white h-40">
-          <h3
-            className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
-            onClick={(e) => {
-              const parent = e.currentTarget.parentElement
-              if (cardsRef.current[0] === parent) shiftStack()
-            }}
-          >
             <a href="https://www.npmjs.com/package/rss2html" target="_blank">
               rss2html
             </a>
@@ -179,60 +157,29 @@ const Projects = () => {
             <em>ish</em>.
           </h3>
         </div>
+
+        <div className="flex justify-between absolute project-cards bg-white h-40">
+          <h3
+            className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
+            onClick={(e) => {
+              const parent = e.currentTarget.parentElement
+              if (cardsRef.current[0] === parent) shiftStack()
+            }}
+          >
+            <a href="https://github.com/lambergmiki/Budget-RSS-Feed-Reader" target="_blank">
+              Budget RSS Feed Reader
+            </a>
+          </h3>
+          <h3 className="description p-2 opacity-0 ml-60 text-balance">
+            Istället för att ladda ned en befintlig RSS-läsare skapade jag mig min egna från
+            grunden. En fullstack-applikation som byggdes på några få veckor, där grundidén var
+            "simpel och minimalistisk".
+          </h3>
+        </div>
       </div>
 
-      {/* Mobile */}
-      <div className="mobile-container relative flex flex-col  md:hidden">
+      <div className="mobile-container relative flex flex-col md:hidden">
         <div className="bg-white min-h-40 relative border-2 mb-6">
-          <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
-            <a href="https://github.com/lambergmiki/matgeneratorn" target="_blank">
-              Matgeneratorn.se
-            </a>
-          </h3>
-          <h3 className="description p-2">
-            Mitt första större projekt med JavaScript. Möjligen också mitt första
-            "utvecklingsuppdrag", eftersom min fru bad mig skapa den här applikationen. Vill du se
-            den live? Du hittar den på{" "}
-            <a
-              className="underline decoration-double"
-              href="https://www.matgeneratorn.se"
-              target="_blank"
-            >
-              matgeneratorn.se
-            </a>
-            .
-          </h3>
-        </div>
-
-        <div className="bg-white min-h-40 relative">
-          <div className="bg-white min-h-40 relative border mb-6">
-            <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
-              <a href="https://github.com/lambergmiki/IoT-Summer-2025" target="_blank">
-                My first IoT project
-              </a>
-            </h3>
-            <h3 className="description p-2">
-              Hur man tar hand om pizzadeg när klimatet inte går att lita på. Jättekul att för
-              första gången se hur hårdvara och mjukvara kan interagera.
-            </h3>
-          </div>
-        </div>
-
-        <div className="bg-white min-h-40 relative border mb-6">
-          <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
-            <a href="https://github.com/lambergmiki/dotfiles_old" target="_blank">
-              Dotfiles
-            </a>
-          </h3>
-          <h3 className="description p-2">
-            {" "}
-            Efter att ha ominstallerat mjukvara och diverse konfigurationer i otaliga miljöer
-            hittade jag via en bekant "dotfiles". Konfigurationsfiler säkerhetskopieras och ett
-            shellscript förenklar livet vid nya installationer.
-          </h3>
-        </div>
-
-        <div className="bg-white min-h-40 relative border mb-6">
           <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
             <a href="https://github.com/lambergmiki/Alien-Invasion" target="_blank">
               Alien Invasion
@@ -253,6 +200,39 @@ const Projects = () => {
 
         <div className="bg-white min-h-40 relative border mb-6">
           <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
+            <a href="https://github.com/lambergmiki/matgeneratorn" target="_blank">
+              Matgeneratorn.se
+            </a>
+          </h3>
+          <h3 className="description p-2">
+            Mitt första större projekt med JavaScript. Möjligen också mitt första
+            "utvecklingsuppdrag", eftersom min fru bad mig skapa den här applikationen. Vill du se
+            den live? Du hittar den på{" "}
+            <a
+              className="underline decoration-double"
+              href="https://www.matgeneratorn.se"
+              target="_blank"
+            >
+              matgeneratorn.se
+            </a>
+            .
+          </h3>
+        </div>
+
+        <div className="bg-white min-h-40 relative border mb-6">
+          <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
+            <a href="https://github.com/lambergmiki/IoT-Summer-2025" target="_blank">
+              My first IoT project
+            </a>
+          </h3>
+          <h3 className="description p-2">
+            Hur man tar hand om pizzadeg när klimatet inte går att lita på. Jättekul att för första
+            gången se hur hårdvara och mjukvara kan interagera.
+          </h3>
+        </div>
+
+        <div className="bg-white min-h-40 relative border mb-6">
+          <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
             <a href="https://www.npmjs.com/package/rss2html" target="_blank">
               rss2html
             </a>
@@ -262,6 +242,19 @@ const Projects = () => {
             exponering mot annat material etc.) och tog tillfället i akt under en
             "bygg-en-modul"-kurs för att skapa början av en automatisk RSS-feed-generator-
             <em>ish</em>.
+          </h3>
+        </div>
+
+        <div className="bg-white min-h-40 relative border mb-6">
+          <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
+            <a href="https://github.com/lambergmiki/Budget-RSS-Feed-Reader" target="_blank">
+              Budget RSS Feed Reader
+            </a>
+          </h3>
+          <h3 className="description p-2">
+            Istället för att ladda ned en befintlig RSS-läsare skapade jag mig min egna från
+            grunden. En fullstack-applikation som byggdes på några få veckor, där grundidén var
+            "simpel och minimalistisk".
           </h3>
         </div>
       </div>

@@ -57,6 +57,11 @@ const About = () => {
           <img src={"/icons/icons8-mongodb-48.png"} alt="MongoDB logo" className="" />
           <p className="mt-2 text-lg font-medium">MongoDB</p>
         </div>
+
+        <div className="flex flex-col items-center">
+          <img src={"/icons/icons8-linux-48.png"} alt="Linux logo" className="" />
+          <p className="mt-2 text-lg font-medium">Linux</p>
+        </div>
       </div>
       <div id="learning-tech">
         <p className="text-center text-2xl md:text-4xl font-extrabold text-secondary-white mt-20 mb-10">

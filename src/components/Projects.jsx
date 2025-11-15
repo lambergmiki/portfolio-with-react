@@ -62,9 +62,9 @@ const Projects = () => {
     <section id="projects" className="px-6 py-10 text-xl">
       <h2 className="text-5xl mb-8 text-center text-secondary-white">Projekt</h2>
       <p className="mb-10 text-2xl xl:mb-20 text-center">
-        Klicka på titeln för att kika på projektet. Från äldst till senaste.
+        Klicka på titeln för att kika på projektet (äldst först)
         <span className="hidden md:inline">
-          , eller på själva kortet för att bläddra till nästa projekt. Från äldst till senaste.
+          , eller på själva kortet för att bläddra till nästa projekt.
         </span>
       </p>
 
@@ -178,6 +178,7 @@ const Projects = () => {
         </div>
       </div>
 
+      {/* Mobile view */}
       <div className="mobile-container relative flex flex-col md:hidden">
         <div className="bg-white min-h-40 relative border-2 mb-6">
           <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">

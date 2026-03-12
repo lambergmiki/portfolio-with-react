@@ -69,7 +69,7 @@ const Projects = () => {
       </p>
 
       <div ref={projectsWrapper} className="hidden md:block relative h-[400px] w-full">
-        <div className="flex justify-between absolute project-cards bg-white h-40">
+        <div className="flex justify-between absolute project-cards h-40">
           <h3
             className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
             onClick={(e) => {
@@ -94,7 +94,7 @@ const Projects = () => {
           </h3>
         </div>
 
-        <div className="flex justify-between absolute project-cards bg-white h-40">
+        <div className="flex justify-between absolute project-cards h-40">
           <h3
             className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
             onClick={(e) => {
@@ -120,7 +120,7 @@ const Projects = () => {
           </h3>
         </div>
 
-        <div className="flex justify-between absolute project-cards bg-white h-40">
+        <div className="flex justify-between absolute project-cards h-40">
           <h3
             className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
             onClick={(e) => {
@@ -138,7 +138,7 @@ const Projects = () => {
           </h3>
         </div>
 
-        <div className="flex justify-between absolute project-cards bg-white h-40">
+        <div className="flex justify-between absolute project-cards h-40">
           <h3
             className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
             onClick={(e) => {
@@ -158,7 +158,7 @@ const Projects = () => {
           </h3>
         </div>
 
-        <div className="flex justify-between absolute project-cards bg-white h-40">
+        <div className="flex justify-between absolute project-cards h-40">
           <h3
             className="title skew-x-12 border-8 p-2 min-w-[396px] border-double bg-stone-900 text-3xl text-center"
             onClick={(e) => {
@@ -180,7 +180,7 @@ const Projects = () => {
 
       {/* Mobile view */}
       <div className="mobile-container relative flex flex-col md:hidden">
-        <div className="bg-white min-h-40 relative border-2 mb-6">
+        <div className="min-h-40 relative border-2 mb-6">
           <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
             <a href="https://github.com/lambergmiki/Alien-Invasion" target="_blank">
               Alien Invasion
@@ -199,7 +199,7 @@ const Projects = () => {
           </h3>
         </div>
 
-        <div className="bg-white min-h-40 relative border mb-6">
+        <div className="min-h-40 relative border mb-6">
           <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
             <a href="https://github.com/lambergmiki/matgeneratorn" target="_blank">
               Matgeneratorn.se
@@ -220,7 +220,7 @@ const Projects = () => {
           </h3>
         </div>
 
-        <div className="bg-white min-h-40 relative border mb-6">
+        <div className="min-h-40 relative border mb-6">
           <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
             <a href="https://github.com/lambergmiki/IoT-Summer-2025" target="_blank">
               My first IoT project
@@ -232,7 +232,7 @@ const Projects = () => {
           </h3>
         </div>
 
-        <div className="bg-white min-h-40 relative border mb-6">
+        <div className="min-h-40 relative border mb-6">
           <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
             <a href="https://www.npmjs.com/package/rss2html" target="_blank">
               rss2html
@@ -246,7 +246,7 @@ const Projects = () => {
           </h3>
         </div>
 
-        <div className="bg-white min-h-40 relative border mb-6">
+        <div className="min-h-40 relative border mb-6">
           <h3 className="title p-2 min-w-max border-b-2 text-2xl text-center underline decoration-double">
             <a href="https://github.com/lambergmiki/Budget-RSS-Feed-Reader" target="_blank">
               Budget RSS Feed Reader

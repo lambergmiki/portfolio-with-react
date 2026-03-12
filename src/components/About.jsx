@@ -3,7 +3,8 @@ const About = () => {
     <section id="about" className="p-10 pl-6 text-xl">
       <p className="text-5xl text-center text-secondary-white mb-10">Om mig</p>
       <p className="text-2xl/9 text-center text-balance mb-20">
-        Miki heter jag, 32 år gammal, och går andra året Webbprogrammerare på Linnéuniversitetet.
+        Miki heter jag, 32 år gammal, jobbar som utvecklare på Knowit Experience samtidigt som jag
+        slutför mitt examensarbete för att ta högskoleexamen i datavetenskap på Linnéuniversitetet.
         <p>
           {" "}
           <br></br>
@@ -13,9 +14,9 @@ const About = () => {
         <p>
           {" "}
           <br></br>
-          Förutom kod & teknik tycker jag väldigt mycket om mat och matlagning, fotboll (gärna
-          italiensk) och att spendera tid med min familj. Förr spenderade jag många timmar på tv-
-          och datorspel, idag blir det mer operativsystem, hårdvara och mjukvara istället.
+          Förutom kod & teknik tycker jag väldigt mycket om mat och matlagning, fotboll (helst
+          italiensk) och att spendera tid med min fru och dotter. Förr spenderade jag många timmar
+          på tv- och datorspel, idag blir det mer operativsystem, hård- och mjukvara istället.
         </p>
       </p>
       <p className="text-5xl text-center tracking-wider font-extrabold text-secondary-white mb-10">
@@ -62,6 +63,11 @@ const About = () => {
           <img src={"/icons/icons8-linux-48.png"} alt="Linux logo" className="" />
           <p className="mt-2 text-lg font-medium">Linux</p>
         </div>
+
+        <div className="flex flex-col items-center">
+          <img src={"/icons/icons8-windows-48.png"} alt="Windows logo" className="" />
+          <p className="mt-2 text-lg font-medium">Windows</p>
+        </div>
       </div>
       <div id="learning-tech">
         <p className="text-center text-2xl md:text-4xl font-extrabold text-secondary-white mt-20 mb-10">
@@ -70,14 +76,15 @@ const About = () => {
 
         <div className="flex flex-wrap justify-center gap-8">
           <div className="flex flex-col items-center">
-            <img src={"/icons/icons8-react-48.png"} alt="React logo" className="" />
-            <p className="mt-2 text-lg font-medium">React</p>
+            <img src={"/icons/icons8-c-48.png"} alt="C# logo" className="" />
+            <p className="mt-2 text-lg font-medium">C#</p>
           </div>
 
-          <div className="flex flex-col items-center">
+          {/* Currently paused */}
+          {/* <div className="flex flex-col items-center">
             <img src={"/icons/icons8-typescript-48.png"} alt="TypeScript logo" className="" />
             <p className="mt-2 text-lg font-medium">TypeScript</p>
-          </div>
+          </div> */}
 
           <div className="flex flex-col items-center">
             <img src={"/icons/icons8-postgresql-48.png"} alt="PostgreSQL logo" className="" />
